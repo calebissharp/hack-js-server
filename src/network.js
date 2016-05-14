@@ -7,6 +7,12 @@ class Network {
     this.name = name;
     this.computers = [];
   }
+
+  connect(computer, ip) {
+    computer.ip = ip;
+
+    this.computers.push(computer);
+  }
 }
 
 export default Network;
