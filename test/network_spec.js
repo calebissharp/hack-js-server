@@ -9,7 +9,7 @@ describe('Network', () => {
       expect(network.name).to.equal('network1');
     });
 
-    it('requires a the network name', () => {
+    it('requires the network name', () => {
       expect(() => new Network()).to.throw(new Error("Missing required argument 'name'"));
     });
   });
