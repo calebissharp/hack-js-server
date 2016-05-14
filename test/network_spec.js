@@ -17,14 +17,14 @@ describe('Network', () => {
 
   describe('#connect', () => {
     it('adds a computer to the network', () => {
-      const network = new Network();
+      const network = new Network('network1');
       network.connect(new Computer());
 
       expect(network.computers[0]).to.be.an('Object');
     });
 
     it('assigns the provided ip to the computer', () => {
-      const network = new Network();
+      const network = new Network('network1');
       network.connect(new Computer(), '1.2.3.4');
 
       expect(network.computers[0].ip).to.equal('1.2.3.4');
