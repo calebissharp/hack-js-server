@@ -5,6 +5,7 @@ class Network {
     }
 
     this.name = name;
+    this.computers = [];
   }
 }
 
