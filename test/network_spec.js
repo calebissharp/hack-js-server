@@ -13,6 +13,11 @@ describe('Network', () => {
     it('requires the network name', () => {
       expect(() => new Network()).to.throw("Missing required argument 'name'");
     });
+
+    it('initializes variables', () => {
+      const network = new Network('network1');
+      expect(network.computers).to.be.an('Array');
+    });
   });
 
   describe('#connect', () => {
