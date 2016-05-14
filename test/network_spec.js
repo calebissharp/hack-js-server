@@ -10,7 +10,7 @@ describe('Network', () => {
     });
 
     it('requires a the network name', () => {
-      expect(() => new Network()).to.throw(new TypeError("Missing required argument 'name'"));
+      expect(() => new Network()).to.throw(new Error("Missing required argument 'name'"));
     });
   });
 });
