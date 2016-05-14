@@ -1,5 +1,7 @@
 # hack-js-server
 
+[![Build Status](https://travis-ci.org/epicsharp/hack-js-server.svg?branch=master)](https://travis-ci.org/epicsharp/hack-js-server)
+
 A 'hacking' simulator that runs from the command line. This is the server.
 
 > This is a work in progress, and currently doesn't work
